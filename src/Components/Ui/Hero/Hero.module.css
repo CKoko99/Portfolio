@@ -1,22 +1,38 @@
-.hero img {
-  width: 100%;
+.welcome {
+  font-size: 1.5em;
+  width: 50vh;
+  margin-top: 2em;
 }
-.hero-text {
-    color: white;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hero_img {
+  mix-blend-mode: multiply;
+  width: 35vh;
+  margin-top: 2em;
+}
+.hero {
+  /*margin-top: 3em;*/
+  background-color: #fff2e5;
+}
+.hero_subsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
 }
 
-.hero-button{
-    color: white;
-    padding: 15px;
-    border-radius: 30px;
-    background-color: rgb(224, 65, 92);
-    border: 1px white solid;
-    font: inherit;
+.arrow {
+  /*padding: 2em;*/
+  width: 5vh;
 }
-.hero-button:hover{
-    background-color: rgb(242, 106, 129);
+@media only screen and (max-width: 850px) {
+  .hero_subsection {
+    flex-direction: column;
+  }
+  .welcome {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero {
+    padding-top: 2em;
+  }
 }

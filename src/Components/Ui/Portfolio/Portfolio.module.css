@@ -1,0 +1,31 @@
+.imgs img{
+    height: 35vw;
+}
+.imgs{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    font-weight: bold;
+    font-size: 3vh;
+    padding: 2em;
+}
+.project{
+    text-align: left;
+    margin-bottom: 2em;
+}
+.project-overview{
+    font-size: 2vw;
+}
+.project-heading{
+    font-size: 2.5vh;
+    padding-bottom: .3em;
+}
+.project-links a{
+    margin-right: 10px;
+    font-size: 1.5vw;
+}
+.project-links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

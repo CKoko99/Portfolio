@@ -1,0 +1,30 @@
+.img-text{
+    color: white;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+.img-board{
+    position: relative;
+}
+.img-board img{
+    width: 22em;
+}
+.sections{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.Heading{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+    .sections{
+      flex-direction: column;
+    }
+  }

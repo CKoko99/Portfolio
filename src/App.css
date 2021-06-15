@@ -1,10 +1,14 @@
 .App {
   text-align: center;
-  font-family: 'Chalkboard';
+  margin: auto;
   width: 90%;
-    margin: auto;
+  background-color: #FFF2E5;
 }
-
+.background{
+  margin: auto;
+  background-color: #FFF2E5;
+  font-family: 'Montserrat';
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

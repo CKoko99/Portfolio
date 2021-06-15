@@ -1,0 +1,27 @@
+.Contact{
+    background-color: #4D4D4D;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+.Contact a{
+    color: white;
+}
+.heading{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1em;
+}
+.social{
+    font-size: 1.2em;
+}
+.contact-item{
+    padding: .5em;
+}
+.icons img{
+    width: 1.3em;
+    padding: 1em;
+}
