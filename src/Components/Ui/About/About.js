@@ -10,10 +10,12 @@ function About() {
         <div className={classes["top-section"]}>
           <div className={classes["top-section-heading"]}>About Me</div>
           <div className={classes["section"]}>
-            I am a progress driven developer eager to master my craft. I am
-            dedicated to lifelong learning and grateful to be able to create new
-            things everyday with my technical skills. I enjoy bringing life to
-            new ideas whether it is for a personal project or one of my clients.
+            As a highly motivated software engineer, I am constantly striving to enhance my
+            technical abilities and bring my passion for software development to every project
+            I work on. With a Bachelor of Science in Computer Science from the University of Houston,
+            I am committed to continuous learning and am always eager to tackle new challenges.
+            Whether it's for a client or a personal project, I am driven by the thrill of bringing
+            innovative ideas to life through my code.
           </div>
         </div>
         <div className={classes["bottom-section"]}>
