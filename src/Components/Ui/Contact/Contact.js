@@ -6,7 +6,7 @@ import linkedin from '../../../Images/Icons/linkedin.svg'
 function Contact() {
   return (
     <>
-      <div className={classes["Contact"]}>
+      <div id="contact" className={classes["Contact"]}>
           <div className={classes["heading"]}>Get in Touch</div>
           <div className={classes['contact']}>
 
@@ -19,9 +19,9 @@ function Contact() {
               <div className={classes.social}>
                   Connect on Social Media
                   <div className={classes.icons}>
-                      <a href="https://github.com/koko2loko"><img alt="github" src={github}/></a>
-                      <a href="https://www.instagram.com/ckwebdev/"><img alt="instagram" src={insta}/></a>
-                      <a href="https://www.linkedin.com/in/courtney-koko-b49b19214/"><img alt="linkedin" src={linkedin}/></a>
+                      <a rel="noreferrer" target="_blank" href="https://github.com/koko2loko"><img alt="github" src={github}/></a>
+                      <a rel="noreferrer" target="_blank" href="https://www.instagram.com/ckwebdev/"><img alt="instagram" src={insta}/></a>
+                      <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/courtney-koko-b49b19214/"><img alt="linkedin" src={linkedin}/></a>
                   </div>
               </div>
           </div>

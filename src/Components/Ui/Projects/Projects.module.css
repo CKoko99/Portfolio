@@ -1,6 +1,6 @@
 .img-text{
     color: white;
-    z-index: 5;
+    z-index: 2;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,6 +12,7 @@
 }
 .img-board img{
     width: 22em;
+    z-index: 1;
 }
 .sections{
     margin-top: 2em;

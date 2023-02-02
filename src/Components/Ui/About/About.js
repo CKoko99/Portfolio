@@ -6,18 +6,14 @@ import tech from "../../../Images/Icons/tech.svg";
 function About() {
   return (
     <>
-      <div className={classes["about"]}>
+      <div id="about" className={classes["about"]}>
         <div className={classes["top-section"]}>
           <div className={classes["top-section-heading"]}>About Me</div>
           <div className={classes["section"]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            justo augue, accumsan id venenatis a, faucibus eu orci. Donec
-            maximus, nunc id dignissim pretium, lacus felis consequat magna, non
-            maximus felis mi ut turpis. Duis fermentum purus a purus aliquam
-            finibus. Pellentesque blandit dolor ullamcorper ipsum ullamcorper,
-            nec tempor erat condimentum. Suspendisse imperdiet commodo ante sed
-            posuere. Proin ullamcorper ipsum id nisl ultricies molestie a quis
-            sem. In hac habitasse platea dictumst.
+            I am a progress driven developer eager to master my craft. I am
+            dedicated to lifelong learning and grateful to be able to create new
+            things everyday with my technical skills. I enjoy bringing life to
+            new ideas whether it is for a personal project or one of my clients.
           </div>
         </div>
         <div className={classes["bottom-section"]}>
