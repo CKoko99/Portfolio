@@ -130,7 +130,7 @@ apps.forEach((app) => {
     }
   });
 });
-console.log(technologies)
+
 
 function Webapps() {
   useEffect(() => {
@@ -154,47 +154,47 @@ function Webapps() {
 
 
   //foreach tech
-  const techList = technologies.map((tech) => {
+  const techList = technologies.map((tech, index) => {
     return (
-      <button onClick={filterProjects} value={tech} className={classes["button-38"]}>
+      <button key={index} onClick={filterProjects} value={tech} className={classes["button-38"]}>
         {tech}
       </button>
     );
   });
   // foreach projects
-  const projectList = projects.map((project) => {
+  const projectList = projects.map((project, index) => {
     return (
-      <div key={project.id} className={classes["project"]}>
+      <div key={index} className={classes["project"]}>
         <div id={project.id} className={classes["project-heading"]}>
           {project.heading}
         </div>
         <div className={classes["imgs"]}>
-          {project.imgs.map((img) => (
-            <img alt={project.heading} loading="lazy" src={img} />
+          {project.imgs.map((img, index) => (
+            <img key={index} alt={project.heading} loading="lazy" src={img} />
           ))}
         </div>
         <div className={classes["project-links"]}>
-          {project.links.map((link) => (
-            <a href={link.href} rel={link.rel} target={link.target}>
+          {project.links.map((link, index) => (
+            <a key={index} href={link.href} rel={link.rel} target={link.target}>
               {link.text}
             </a>
           ))}
         </div>
         <div className={classes["project-tech"]}>
-          {project.tech.map((tech) => (
-            <div className={classes["tech"]}>{tech}</div>
+          {project.tech.map((tech, index) => (
+            <div key={index} className={classes["tech"]}>{tech}</div>
           ))}
         </div>
         <div className={classes["project-overview"]}>
-          {project.overview.map((overview) => (
-            <p>{overview}</p>
+          {project.overview.map((overview, index) => (
+            <p key={index}>{overview}</p>
           ))}
         </div>
       </div>
     );
   });
 
-  console.log(technologies)
+
   return (
     <>
       <div className={classes["Portfolio"]}>
