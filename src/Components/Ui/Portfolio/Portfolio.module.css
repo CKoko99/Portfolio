@@ -1,31 +1,113 @@
-.imgs img{
+.imgs img {
     height: 35vw;
 }
-.imgs{
+
+.imgs {
     display: flex;
     justify-content: space-between;
 }
-.heading{
+
+.heading {
     font-weight: bold;
     font-size: 3vh;
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
 }
-.project{
+
+.project {
     text-align: left;
     margin-bottom: 2em;
 }
-.project-overview{
+
+.project-overview {
     font-size: 2vw;
 }
-.project-heading{
+
+.project-heading {
     font-size: 2.5vh;
     padding-bottom: .3em;
+    font-weight: 600;
 }
-.project-links a{
-    margin-right: 10px;
+
+.project-links a {
+    margin-right: 1em;
     font-size: 1.5vw;
 }
-.project-links{
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.project-links {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 1rem;
+}
+
+.filter-options {
+    display: flex;
+    margin: .5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+
+.tech {
+
+    margin: 0 .5rem .5rem 0;
+    padding: .5em;
+    border-radius: 5px;
+    background-color: #D1D5DB;
+    color: #111827;
+    font-size: 1rem
+}
+
+.tech:first-child {
+    margin-left: 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* CSS */
+.button-38 {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: .5em;
+}
+
+.button-38:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.button-38:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .Portfolio {
+        padding-top: 2em;
+    }
 }

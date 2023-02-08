@@ -6,51 +6,48 @@ import tech from "../../../Images/Icons/tech.svg";
 function About() {
   return (
     <>
-      <div className={classes["about"]}>
+      <div id="about" className={classes["about"]}>
         <div className={classes["top-section"]}>
           <div className={classes["top-section-heading"]}>About Me</div>
           <div className={classes["section"]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            justo augue, accumsan id venenatis a, faucibus eu orci. Donec
-            maximus, nunc id dignissim pretium, lacus felis consequat magna, non
-            maximus felis mi ut turpis. Duis fermentum purus a purus aliquam
-            finibus. Pellentesque blandit dolor ullamcorper ipsum ullamcorper,
-            nec tempor erat condimentum. Suspendisse imperdiet commodo ante sed
-            posuere. Proin ullamcorper ipsum id nisl ultricies molestie a quis
-            sem. In hac habitasse platea dictumst.
+            As a highly motivated software engineer, I am constantly striving to enhance my
+            technical abilities and bring my passion for software development to every project
+            I work on. With a Bachelor of Science in Computer Science from the University of Houston,
+            I am committed to continuous learning and am always eager to tackle new challenges.
+            Whether it's for a client or a personal project, I am driven by the thrill of bringing
+            innovative ideas to life through my code.
           </div>
         </div>
         <div className={classes["bottom-section"]}>
-          <div className={classes["bottom-section-heading"]}>What I Speak</div>
+          <div className={classes["bottom-section-heading"]}>Technologies</div>
           <div className={classes["section"]}>
             <div className={classes["groups"]}>
               <div className={classes["group"]}>
                 <div className={classes["sub-heading"]}>
-                  <img alt="Languages" src={speak} /> Languages
+                  <img alt="Languages" src={speak} /> Frontend
                 </div>
                 <div className={classes["list"]}>
                   <div className={classes["list-item"]}>HTML</div>
                   <div className={classes["list-item"]}>CSS</div>
                   <div className={classes["list-item"]}>Javascript</div>
-                  <div className={classes["list-item"]}>Python</div>
-                  <div className={classes["list-item"]}>Node Js</div>
-                  <div className={classes["list-item"]}>Liquid</div>
+                  <div className={classes["list-item"]}>React</div>
+                  <div className={classes["list-item"]}>Redux</div>
                 </div>
               </div>
               <div className={classes["group"]}>
                 <div className={classes["sub-heading"]}>
-                  <img alt="Frameworks" src={frame} /> Frameworks
+                  <img alt="Frameworks" src={frame} /> Backend
                 </div>
                 <div className={classes["list"]}>
-                  <div className={classes["list-item"]}>React Js</div>
-                  <div className={classes["list-item"]}>Redux</div>
-                  <div className={classes["list-item"]}>Express</div>
-                  <div className={classes["list-item"]}>Flask</div>
+                  <div className={classes["list-item"]}>Python</div>
+                  <div className={classes["list-item"]}>Java</div>
+                  <div className={classes["list-item"]}>PHP</div>
+                  <div className={classes["list-item"]}>C++</div>
                 </div>
               </div>
               <div className={classes["group"]}>
                 <div className={classes["sub-heading"]}>
-                  <img alt="tech" src={tech} /> Technologies
+                  <img alt="tech" src={tech} /> Tools
                 </div>
                 <div className={classes["list"]}>
                   <div className={classes["list-item"]}>Git</div>

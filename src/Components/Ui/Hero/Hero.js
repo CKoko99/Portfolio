@@ -9,14 +9,15 @@ function Hero() {
         <div className={classes["hero_subsection"]}>
           <img alt="CK Logo" className={classes["hero_img"]} src={CKLogo} />
           <div className={classes["welcome"]}>
-            Greetings! I am Courtney Koko a Front End Developer from Houston,
-            Texas. I help designers, small agencies and businesses bring their
-            ideas to life. Experienced in creating Web Applications and Custom
-            E-commerce websites
+            Hello and welcome! My name is Courtney Koko and I am a full-stack developer based
+            in Houston, Texas. I specialize in helping individuals and organizations bring their
+            digital vision to fruition. With a focus on web applications and custom
+            e-commerce solutions, I bring a wealth of experience and technical know-how
+            to every project I undertake.
           </div>
         </div>
         <div className={classes["hero_subsection"]}>
-            <img alt="arrow" className={classes['arrow']} src={Arrow}/>
+          <img alt="arrow" className={classes['arrow']} src={Arrow} />
         </div>
       </div>
     </div>

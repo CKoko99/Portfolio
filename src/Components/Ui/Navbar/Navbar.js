@@ -15,20 +15,20 @@ function Navbar() {
   if(modalOpen){
      modal = <> <div className={classes["modal"]}>
     <h1 className={classes["modal-exit"]} onClick={closeModalHandler}>X</h1>
-  <HashLink to="#about">
+  <HashLink to="/#about">
     <h1 onClick={closeModalHandler} className={classes["top-subsection__links"]}>About</h1>
   </HashLink>
-  <HashLink smooth to="#projects">
+  <HashLink smooth to="/#projects">
     <h1 onClick={closeModalHandler} className={classes["top-subsection__links"]}>
       Portfolio
     </h1>
   </HashLink>
-  <HashLink to="#contact">
+  <HashLink to="/#contact">
     <h1 onClick={closeModalHandler} className={classes["top-subsection__links"]}>Contact</h1>
   </HashLink>
-  <Link>
+  <a href='/Resume.pdf' target="_blank">
     <h1 onClick={closeModalHandler} className={classes["top-subsection__links"]}>Resume</h1>
-  </Link>
+  </a>
 </div></>
   }else{
      modal = <></>
@@ -44,18 +44,18 @@ function Navbar() {
           </div>
           <div className={classes["top-subsection"]}>
             <div className={classes["desktop"]}>
-              <HashLink to="#about">
+              <HashLink smooth to="/#about">
                 <h1 className={classes["top-subsection__links"]}>About</h1>
               </HashLink>
-              <HashLink smooth to="#projects">
+              <HashLink smooth to="/#projects">
                 <h1 className={classes["top-subsection__links"]}>Portfolio</h1>
               </HashLink>
-              <HashLink to="#contact">
+              <HashLink smooth to="/#contact">
                 <h1 className={classes["top-subsection__links"]}>Contact</h1>
               </HashLink>
-              <Link>
+              <a href='/Resume.pdf' target="_blank">
                 <h1 className={classes["top-subsection__links"]}>Resume</h1>
-              </Link>
+              </a>
             </div>
             <div className={classes["mobile"]}>
               <img alt="ham" onClick={openModalHandler} className={classes["ham"]} src={ham} />
