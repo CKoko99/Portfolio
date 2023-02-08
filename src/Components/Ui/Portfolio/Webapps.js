@@ -3,8 +3,8 @@ import edc from "../../../Images/edc.gif";
 import edcmobile from "../../../Images/edcmobile.gif";
 import travels from "../../../Images/travels.gif";
 import travelsmobile from "../../../Images/travelsmobile.gif";
-//import revvedup from "../../../Images/revvedup.gif";
-//import revvedupmobile from "../../../Images/revvedupmobile.gif";
+import revvedup from "../../../Images/revvedup.png";
+import revvedupmobile from "../../../Images/revvedupmobile.png";
 import cougarcafe from "../../../Images/cougarcafe.gif";
 import cougarcafemobile from "../../../Images/cougarcafemobile.gif";
 import { useState } from "react";
@@ -12,7 +12,7 @@ import { useEffect } from "react";
 
 
 const apps = [
-  /*{
+  {
     id: "RevvedUp",
     heading: "Revved Up Car Based Social Media Web App",
     imgs: [revvedup, revvedupmobile],
@@ -30,7 +30,7 @@ const apps = [
       "Overall, the combination of these technologies has resulted in a web application that is both powerful and user - friendly.Whether you're a seasoned car enthusiast or just starting to develop a passion for cars, Revved Up is the perfect place to connect with like-minded individuals and share your build with the world."
     ],
     tech: ["HTML", "CSS", "Javascript", "React", "Redux", "Material UI", "Node", "Express", "MongoDB"],
-  },*/
+  },
   {
     id: "CougarCafe",
     heading: "Cougar Cafe",
