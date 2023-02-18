@@ -6,6 +6,7 @@ import cutemobile from "../../../Images/cutemobileopt.gif";
 import blabergmobile from "../../../Images/blabergmobileopt.gif";
 import oypsmobile from "../../../Images/oypsmobile.gif";
 import { useEffect } from "react";
+import Image from "mui-image";
 
 const apps = [
   {
@@ -42,7 +43,7 @@ function Ecommerce() {
         <div className={classes["project-heading"]}>{project.name}</div>
         <div className={classes["imgs"]}>
           {project.imgs.map((img, index) => {
-            return <img key={index} alt={project.name} loading="lazy" src={img} />;
+            return <Image height={"35vw"} width="auto" fit="contain" className={"img"} key={index} alt={project.name} loading="lazy" src={img} />;
           })}
         </div>
         <div className={classes["project-links"]}>

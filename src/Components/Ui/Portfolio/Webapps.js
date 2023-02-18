@@ -10,6 +10,7 @@ import cougarcafemobile from "../../../Images/cougarcafemobile.gif";
 import { useState } from "react";
 import { useEffect } from "react";
 
+import Image from "mui-image";
 
 const apps = [
   {
@@ -137,11 +138,11 @@ function Webapps() {
     window.scrollTo(0, 0);
   });
   const [projects, setProjects] = useState(apps);
-
+  const [selectedFilter, setSelectedFilter] = useState("All");
 
   const filterProjects = (e) => {
     const filter = e.target.value;
-
+    setSelectedFilter(filter);
     if (filter === "All") {
       setProjects(apps);
     } else {
@@ -156,7 +157,7 @@ function Webapps() {
   //foreach tech
   const techList = technologies.map((tech, index) => {
     return (
-      <button key={index} onClick={filterProjects} value={tech} className={classes["button-38"]}>
+      <button style={{ border: selectedFilter === tech ? "1px solid black" : "0" }} key={index} onClick={filterProjects} value={tech} className={classes["button-38"]}>
         {tech}
       </button>
     );
@@ -170,7 +171,7 @@ function Webapps() {
         </div>
         <div className={classes["imgs"]}>
           {project.imgs.map((img, index) => (
-            <img key={index} alt={project.heading} loading="lazy" src={img} />
+            <Image height={"35vw"} width="auto" fit="contain" className={"img"} key={index} alt={project.heading} loading="lazy" src={img} />
           ))}
         </div>
         <div className={classes["project-links"]}>
@@ -182,7 +183,7 @@ function Webapps() {
         </div>
         <div className={classes["project-tech"]}>
           {project.tech.map((tech, index) => (
-            <div key={index} className={classes["tech"]}>{tech}</div>
+            <div style={{ border: selectedFilter === tech ? "1px solid black" : "0" }} key={index} className={classes["tech"]}>{tech}</div>
           ))}
         </div>
         <div className={classes["project-overview"]}>
