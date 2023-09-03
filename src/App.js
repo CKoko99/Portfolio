@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Ui/Navbar/Navbar";
 import Hero from "./Components/Ui/Hero/Hero";
@@ -12,20 +12,20 @@ function App() {
   return (
     <BrowserRouter>
       <div className="background">
-        <Switch>
-          <Route path="/Ecommerce">
-            <Navbar/>
+        <Routes>
+          <Route path="/Ecommerce" element={<>
+            <Navbar />
             <div className="App">
               <Ecommerce />
             </div>
-          </Route>
-          <Route path="/Webapps">
-            <Navbar/>
+          </>} />
+          <Route path="/Webapps" element={<>
+            <Navbar />
             <div className="App">
-              <Webapps/>
+              <Webapps />
             </div>
-          </Route>
-          <Route path="/*">
+          </>} />
+          <Route path="/*" element={<>
             <Navbar />
             <div className="App">
               <Hero />
@@ -34,9 +34,9 @@ function App() {
             <div className="App">
               <Projects />
             </div>
-          </Route>
-        </Switch>
-            <Contact />
+          </>} />
+        </Routes>
+        <Contact />
       </div>
     </BrowserRouter>
   );
