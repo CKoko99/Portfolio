@@ -2,7 +2,43 @@ import classes from "./About.module.css";
 import speak from "../../../Images/Icons/speak.svg";
 import frame from "../../../Images/Icons/framework.svg";
 import tech from "../../../Images/Icons/tech.svg";
+import { Box, Typography } from '@mui/material';
+const skills = [
+  {
+    name: "Frontend",
+    items: ["HTML", "CSS", "Javascript", "React", "Redux", "Next Js", "MUI", "Bootstrap"],
+    img: speak
+  },
+  {
+    name: "Backend",
+    items: ["Node", "Express", "Python", "Java", "PHP", "C++"],
+    img: frame
+  },
+  {
+    name: "Tools",
+    items: ["Git", "Google Cloud Platform", "Adobe XD", "AWS", "Firebase", "MySQL", "Mongo DB"],
+    img: tech
+  }
+]
 
+const styles = {
+  skills: {
+    display: "flex",
+    flexDirection: "row",
+
+  },
+  skillSection: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  subHeading: {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "row",
+    margin: "1rem",
+  }
+}
 function About() {
   return (
     <>
@@ -19,13 +55,36 @@ function About() {
           </div>
         </div>
         <div className={classes["bottom-section"]}>
-          <div className={classes["bottom-section-heading"]}>Technologies</div>
+          <div className={classes["bottom-section-heading"]}>My Expertise</div>
+          <Box>
+
+            {skills.map((item, index) => {
+              return (
+                <Box key={index} sx={{ ...styles.skillSection }}>
+                  <Box sx={{ ...styles.subHeading }}>
+                    <img alt={item.name} src={item.img} />
+                    <Typography variant="h5">
+                      {item.name}:
+                    </Typography>
+                  </Box>
+                  <Box sx={{ ...styles.skills }}>
+                    {item.items.map((skill, index) => {
+                      return (
+                        <Typography key={index} variant="h6" component="div" sx={{ marginRight: ".5rem" }} >
+                          {skill}{index !== item.items.length - 1 ? ", " : ""}
+                        </Typography>
+                      )
+                    }
+                    )}
+                  </Box>
+                </Box>)
+            }
+            )}
+          </Box>
+
           <div className={classes["section"]}>
             <div className={classes["groups"]}>
               <div className={classes["group"]}>
-                <div className={classes["sub-heading"]}>
-                  <img alt="Languages" src={speak} /> Frontend
-                </div>
                 <div className={classes["list"]}>
                   <div className={classes["list-item"]}>HTML</div>
                   <div className={classes["list-item"]}>CSS</div>
@@ -60,7 +119,7 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }

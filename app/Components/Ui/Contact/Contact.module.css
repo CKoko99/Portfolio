@@ -1,0 +1,24 @@
+.Contact {
+  /* Removed old gray background styling - now using Material-UI components */
+}
+
+/* Keep minimal styles for any remaining elements */
+.contact-item {
+  padding: 0.5em;
+}
+
+.icons img {
+  width: 1.3em;
+  padding: 1em;
+}
+
+/* Social icon hover effect */
+.social-icon {
+  filter: brightness(0) invert(1) !important;
+  transition: filter 0.3s ease-in-out !important;
+}
+
+/* Darken icon on hover */
+a:hover .social-icon {
+  filter: brightness(0) invert(0.7) !important;
+}

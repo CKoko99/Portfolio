@@ -1,0 +1,23 @@
+.projects {
+  background: linear-gradient(135deg, #F8FBFF 0%, #F5F7FA 100%);
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+/* Responsive adjustments for mobile */
+@media only screen and (max-width: 600px) {
+  .projects {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+}
+
+/* Ensure proper spacing on larger screens */
+@media only screen and (min-width: 1200px) {
+  .projects {
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
+}
