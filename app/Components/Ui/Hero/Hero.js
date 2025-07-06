@@ -1,5 +1,5 @@
 import classes from "./Hero.module.css";
-import ArrowIcon from "./Arrow-down.svg";
+// import ArrowIcon from "/Images/Icons/Arrow-down.svg";
 import { Box, Typography, Button } from "@mui/material";
 import {
   motion,
@@ -9,11 +9,11 @@ import {
   useSpring,
 } from "framer-motion";
 import CKLogoIcon from "./CkLogo";
-import CKLogo from "./CkLogo.png";
 import { useEffect, useState, useRef, useMemo } from "react";
 import Image from "next/image";
 import GeometricBackground from "../../Background/GeometricBackground";
 
+const CKLogo = "/Images/CKlogo.png";
 // Hero content data
 const HERO_CONTENT = {
   greeting: "Hello, I'm Courtney",

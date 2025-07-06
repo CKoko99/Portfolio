@@ -6,22 +6,25 @@ import classes from "./GeometricBackground.module.css";
 
 export default function GeometricBackground() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [hexagons, setHexagons] = useState([]);
   const containerRef = useRef(null);
 
-  // Generate unique geometric patterns only once
-  const generateHexagons = () => {
-    return Array.from({ length: 15 }, (_, i) => ({
-      id: i,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: Math.random() * 60 + 20,
-      rotation: Math.random() * 360,
-      delay: Math.random() * 2,
-      duration: Math.random() * 8 + 4,
-    }));
-  };
+  // Generate unique geometric patterns only on client
+  useEffect(() => {
+    const generateHexagons = () => {
+      return Array.from({ length: 15 }, (_, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 60 + 20,
+        rotation: Math.random() * 360,
+        delay: Math.random() * 2,
+        duration: Math.random() * 8 + 4,
+      }));
+    };
+    setHexagons(generateHexagons());
+  }, []);
 
-  const hexagons = useMemo(() => generateHexagons(), []);
   const movementScale = 0.2; // 20% as fast
 
   // Mouse tracking for interactive effects
