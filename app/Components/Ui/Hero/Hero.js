@@ -23,11 +23,11 @@ const HERO_CONTENT = {
   buttons: {
     primary: {
       text: "View My Work",
-      href: "#work",
+      href: "./webapps",
     },
     secondary: {
       text: "Get In Touch",
-      href: "#contact",
+      href: "/#contact",
     },
   },
   scrollText: "Scroll to explore",
