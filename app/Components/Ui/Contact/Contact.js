@@ -17,7 +17,7 @@ const CONTACT_CONTENT = {
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/koko2loko",
+        url: "https://github.com/ckoko99",
         icon: "/Images/Icons/github.svg",
         color: "#333",
       },

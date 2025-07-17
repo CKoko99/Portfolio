@@ -126,7 +126,7 @@ const projects = [
     links: [
       {
         type: "code",
-        url: "https://github.com/koko2loko/CougarCafe",
+        url: "https://github.com/ckoko99/CougarCafe",
         label: "View Code",
         icon: <GitHubIcon />,
       },
@@ -176,7 +176,7 @@ const projects = [
       },
       {
         type: "code",
-        url: "https://github.com/koko2loko/TravelApp",
+        url: "https://github.com/ckoko99/TravelApp",
         label: "View Code",
         icon: <GitHubIcon />,
       },
@@ -213,7 +213,7 @@ const projects = [
       },
       {
         type: "code",
-        url: "https://github.com/koko2loko/EverydayCounts",
+        url: "https://github.com/ckoko99/EverydayCounts",
         label: "View Code",
         icon: <GitHubIcon />,
       },
@@ -244,7 +244,7 @@ const projects = [
     links: [
       {
         type: "code",
-        url: "https://github.com/koko2loko/Carbuilds",
+        url: "https://github.com/ckoko99/Carbuilds",
         label: "View Code",
         icon: <GitHubIcon />,
       },
