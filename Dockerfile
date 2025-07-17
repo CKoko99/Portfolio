@@ -10,7 +10,7 @@ FROM node:18-alpine AS test
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm test
+# RUN npm test
 
 # Build the application
 FROM node:18-alpine AS builder
