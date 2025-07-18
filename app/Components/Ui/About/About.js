@@ -27,7 +27,7 @@ const ABOUT_CONTENT = {
       },
       {
         name: "Backend",
-        items: ["Node", "Express", "Python", "Java", "PHP", "C++"],
+        items: ["Node", "Express", "Python", "Java", "PHP", "C++", "C#"],
         icon: "/Images/Icons/framework.svg",
       },
       {

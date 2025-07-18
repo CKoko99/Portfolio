@@ -27,7 +27,7 @@ const NAVBAR_CONTENT = {
     },
     resume: {
       text: "Resume",
-      href: "/Resume.pdf",
+      href: "/Courtney-Koko-2025-Resume.pdf",
       external: true,
     },
   },
