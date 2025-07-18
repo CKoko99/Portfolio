@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone",
   experimental: {
     appDir: true,
   },
   images: {
-    domains: ['localhost'],
+    domains: ["localhost"],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
@@ -12,11 +13,11 @@ const nextConfig = {
     // Configure SVG imports as React components
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
+      use: ["@svgr/webpack"],
     });
 
     return config;
   },
-}
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig;
